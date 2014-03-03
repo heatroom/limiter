@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="build/build.css">
+</head>
+<body>
+    <input id="p-keyword" type="text" class="form-input"></input>
+    <span id="LimiterWrapper"></span>
+    <script src="build/build.js"></script>
+	<script>
+	    var limiter = require('limiter');
+	    var target = document.getElementById('p-keyword');
+        limiter(target, {max: 30, wrapper: "#LimiterWrapper"});
+	</script>
+	
+</body>
+</html>

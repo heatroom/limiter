@@ -1,0 +1,19 @@
+{
+  "name": "limiter",
+  "repo": "heatroom/limiter",
+  "description": "countdown the input bytes.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "limiter.css"
+  ]
+}

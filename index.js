@@ -36,6 +36,7 @@ Limiter.prototype.getlen = function (text) {
 Limiter.prototype.count = function (text){
   var len = this.getlen(text);
   var max = this.options.max || 50;
+  this.options.tpl = DEFAULT;
   if(len > max) this.options.tpl = EXCEED;
   this.create(len);
 };

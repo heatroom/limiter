@@ -9,7 +9,7 @@ function Limiter(el, options) {
   if(!(this instanceof Limiter)) return new Limiter(el, options);
   this.options = options;
   this.options.tpl = DEFAULT;
-  this.el = $(el);
+  this.el = (typeof el === 'string' ? $(el) : el);
   this.wrapper = $(this.options.wrapper);
   this.render();
 }
